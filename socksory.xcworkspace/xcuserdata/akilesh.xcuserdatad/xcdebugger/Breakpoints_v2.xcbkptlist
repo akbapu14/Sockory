@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   type = "1"
+   type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "socksory/ViewController.swift"
-            timestampString = "506765261.246029"
+            filePath = "socksory/bluetoothConnect.swift"
+            timestampString = "506764755.471138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "pingServer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "socksory/ViewController.swift"
-            timestampString = "506765261.246029"
+            filePath = "socksory/bluetoothConnect.swift"
+            timestampString = "506764799.786638"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "pingServer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "socksory/ViewController.swift"
-            timestampString = "506765261.246029"
+            filePath = "socksory/bluetoothConnect.swift"
+            timestampString = "506765240.594128"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "pingServer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

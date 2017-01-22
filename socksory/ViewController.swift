@@ -10,12 +10,28 @@ import UIKit
 import SceneKit
 class ViewController: UIViewController {
 
+    @IBOutlet weak var arch: UILabel!
+    @IBOutlet weak var toes: UILabel!
+    @IBOutlet weak var outerBall: UILabel!
+    @IBOutlet weak var innerBall: UILabel!
+    @IBOutlet weak var heelBall: UILabel!
+    @IBOutlet weak var heelBack: UILabel!
+    @IBOutlet weak var advice: UILabel!
     @IBOutlet var sceneView: SCNView!
+    var totalViews: [UIView] = []
+    var totalViewStrings: [String] = []
+    var current: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // create a new scene
-        let scene = SCNScene(named: "art.scnassets/sock.scn")!
+        self.totalViews = [self.heelBack, self.heelBall, self.innerBall, self.outerBall, self.toes, self.arch]
+        self.totalViewStrings = ["Heel Back", "Heel Ball", "Inner Ball", "Outer Ball", "Toes", "Arch"]
+        
+        for view in self.totalViews {
+            view.isHidden = true
+        }
+        let scene = SCNScene(named: "art.scnassets/MAIN-FOOT.scn")!
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
@@ -40,8 +56,8 @@ class ViewController: UIViewController {
 //        scene.rootNode.addChildNode(ambientLightNode)
         
         // retrieve the ship node
-        let sock = scene.rootNode.childNode(withName: "sock", recursively: true)!
-        let box = scene.rootNode.childNode(withName: "box", recursively: true)!
+        let sock = scene.rootNode.childNode(withName: "mainFoot", recursively: true)!
+        let box = scene.rootNode.childNode(withName: "toes", recursively: true)!
         box.geometry?.material(named: "j")?.diffuse.contents = UIColor.red
         // animate the 3d object
         sock.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 2)))
@@ -63,6 +79,20 @@ class ViewController: UIViewController {
 //        self.sceneView.addGestureRecognizer(tapGesture)
     }
 
+    @IBAction func changeBottom(_ sender: Any) {
+        current = 1 - current
+        if (current == 0){
+            self.advice.isHidden = false
+            for view in self.totalViews {
+                view.isHidden = true
+            }
+        } else {
+            self.advice.isHidden = true
+            for view in self.totalViews {
+                view.isHidden = false
+            }
+        }
+    }
     @IBAction func changeCoor(_ sender: Any) {
         let box = self.sceneView.scene?.rootNode.childNode(withName: "box", recursively: true)!
         box?.geometry?.material(named: "j")?.diffuse.contents = UIColor.green

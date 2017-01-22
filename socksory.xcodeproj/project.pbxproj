@@ -9,17 +9,39 @@
 /* Begin PBXBuildFile section */
 		2027D8B81A0A83BB922F9EA6 /* Pods_socksory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86426A4D771593F35AF0165 /* Pods_socksory.framework */; };
 		413638571E3439BA00516AE1 /* welcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413638561E3439BA00516AE1 /* welcomeScreen.swift */; };
+		413638591E343B7A00516AE1 /* Spring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413638581E343B7A00516AE1 /* Spring.framework */; };
+		4136385A1E343B7A00516AE1 /* Spring.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 413638581E343B7A00516AE1 /* Spring.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		413DB7731E3461EE00ACA07B /* bluetoothConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413DB7721E3461EE00ACA07B /* bluetoothConnect.swift */; };
 		41C334751E33F36100F1A7AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C334741E33F36100F1A7AF /* AppDelegate.swift */; };
 		41C334771E33F36100F1A7AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C334761E33F36100F1A7AF /* ViewController.swift */; };
 		41C3347A1E33F36100F1A7AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C334781E33F36100F1A7AF /* Main.storyboard */; };
 		41C3347C1E33F36100F1A7AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C3347B1E33F36100F1A7AF /* Assets.xcassets */; };
 		41C3347F1E33F36100F1A7AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C3347D1E33F36100F1A7AF /* LaunchScreen.storyboard */; };
 		41C334871E33F3CA00F1A7AF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C334861E33F3CA00F1A7AF /* art.scnassets */; };
+		41F3CDA21E349ABD009B3D40 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F3CDA11E349ABD009B3D40 /* Alamofire.framework */; };
+		41F3CDA31E349ABD009B3D40 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41F3CDA11E349ABD009B3D40 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4136385B1E343B7A00516AE1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4136385A1E343B7A00516AE1 /* Spring.framework in Embed Frameworks */,
+				41F3CDA31E349ABD009B3D40 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F9ECFB14830A1DECB326DA6 /* Pods-socksory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socksory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socksory/Pods-socksory.debug.xcconfig"; sourceTree = "<group>"; };
 		413638561E3439BA00516AE1 /* welcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = welcomeScreen.swift; sourceTree = "<group>"; };
+		413638581E343B7A00516AE1 /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		413DB7721E3461EE00ACA07B /* bluetoothConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bluetoothConnect.swift; sourceTree = "<group>"; };
 		41C334711E33F36100F1A7AF /* socksory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socksory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C334741E33F36100F1A7AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41C334761E33F36100F1A7AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +50,7 @@
 		41C3347E1E33F36100F1A7AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41C334801E33F36100F1A7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41C334861E33F3CA00F1A7AF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		41F3CDA11E349ABD009B3D40 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7A3EB21111C6A48C7F34CA /* Pods-socksory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socksory.release.xcconfig"; path = "Pods/Target Support Files/Pods-socksory/Pods-socksory.release.xcconfig"; sourceTree = "<group>"; };
 		C86426A4D771593F35AF0165 /* Pods_socksory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socksory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -38,6 +61,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2027D8B81A0A83BB922F9EA6 /* Pods_socksory.framework in Frameworks */,
+				41F3CDA21E349ABD009B3D40 /* Alamofire.framework in Frameworks */,
+				413638591E343B7A00516AE1 /* Spring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +72,8 @@
 		41C334681E33F36100F1A7AF = {
 			isa = PBXGroup;
 			children = (
+				41F3CDA11E349ABD009B3D40 /* Alamofire.framework */,
+				413638581E343B7A00516AE1 /* Spring.framework */,
 				41C334731E33F36100F1A7AF /* socksory */,
 				41C334721E33F36100F1A7AF /* Products */,
 				E38A5EE3D809C2A4F2A58ABC /* Pods */,
@@ -70,6 +97,7 @@
 				41C334861E33F3CA00F1A7AF /* art.scnassets */,
 				41C334761E33F36100F1A7AF /* ViewController.swift */,
 				41C334781E33F36100F1A7AF /* Main.storyboard */,
+				413DB7721E3461EE00ACA07B /* bluetoothConnect.swift */,
 				41C3347B1E33F36100F1A7AF /* Assets.xcassets */,
 				41C3347D1E33F36100F1A7AF /* LaunchScreen.storyboard */,
 				41C334801E33F36100F1A7AF /* Info.plist */,
@@ -107,6 +135,7 @@
 				41C3346F1E33F36100F1A7AF /* Resources */,
 				975AA0B906385160D39A3FAE /* [CP] Embed Pods Frameworks */,
 				673750C661BEE90DCD5F6458 /* [CP] Copy Pods Resources */,
+				4136385B1E343B7A00516AE1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C334771E33F36100F1A7AF /* ViewController.swift in Sources */,
+				413DB7731E3461EE00ACA07B /* bluetoothConnect.swift in Sources */,
 				41C334751E33F36100F1A7AF /* AppDelegate.swift in Sources */,
 				413638571E3439BA00516AE1 /* welcomeScreen.swift in Sources */,
 			);

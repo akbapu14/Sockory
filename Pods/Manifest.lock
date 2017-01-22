@@ -1,7 +1,7 @@
 PODS:
-  - Alamofire (4.0.1)
+  - Alamofire (4.3.0)
   - Spring (1.0.3)
-  - SwiftyJSON (3.1.1)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
@@ -19,9 +19,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
-  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
-  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
 PODFILE CHECKSUM: 9b682bf1a06690df10f8eeef8e01fdd7c12ea6a2
 
