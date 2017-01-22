@@ -50,7 +50,7 @@ class welcomeScreen: UIViewController {
     }
     func analyzePoints(_ a: Int, _ b: Int, _ c: Int,_ d:Int, _ e:Int, _ f:Int ) {
         var sum = a + b + c + d + e + f
-        if (sum / 6) > 100 {
+        if sum > 3000 {
             self.mainTimer.invalidate()
             stepCheckMark.image = stepCheckMark.image!.withRenderingMode(.alwaysTemplate)
             stepCheckMark.tintColor = UIColor.init(red: 1.0/255.0, green: 154.0/255.0, blue: 0.0, alpha: 1)

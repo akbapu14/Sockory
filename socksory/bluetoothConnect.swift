@@ -34,7 +34,7 @@ class bluetoothConnect: UIViewController {
         self.performSegue(withIdentifier: "toSetup", sender: self)
     }
     
-    
+     
     }
     }
     override func didReceiveMemoryWarning() {
