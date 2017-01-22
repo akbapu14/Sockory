@@ -65,7 +65,7 @@ func main() {
 
 			if heelPressure > 900 {
 				stepping = true
-			} else if heelPressure < 500 {
+			} else if heelPressure < 600 {
 				if stepping {
 					steps++
 				}
