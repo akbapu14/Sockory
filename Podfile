@@ -7,6 +7,7 @@ target 'socksory' do
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
   pod 'SwiftyJSON'
   pod ‘Alamofire’, ‘~> 4.0’
+  pod "Button", "~> 4"
   # Pods for socksory
 
 end

@@ -230,12 +230,24 @@
                                     <action selector="changeBottom:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pt2-bW-gR0"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5up-Ck-H1B">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5up-Ck-H1B">
                                 <rect key="frame" x="0.0" y="637" width="375" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8078432083" green="0.35355706190000002" blue="0.3584613465" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="See Shoe Recommendation">
-                                    <color key="titleColor" red="0.8078432083" green="0.35355706190000002" blue="0.3584613465" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wqe-5Y-C6r" kind="presentation" id="6Hk-eg-9lx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6T-m5-euB">
+                                <rect key="frame" x="8" y="435" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="LW8-QJ-RlW" kind="presentation" id="EFM-xe-Ayo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -288,11 +300,77 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="130.88455772113943"/>
         </scene>
+        <!--Shoe Recommendations-->
+        <scene sceneID="2Ma-dd-KZg">
+            <objects>
+                <viewController id="wqe-5Y-C6r" customClass="shoeRecommendations" customModule="socksory" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EtN-bE-7BZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Zd-mM-63o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HDK-vM-ifd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjR-ap-g6N">
+                                <rect key="frame" x="33" y="42" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="R0w-nX-9Bo"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="0Co-xv-lZS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wide" translatesAutoresizingMaskIntoConstraints="NO" id="WGG-Hm-WPk">
+                                <rect key="frame" x="67" y="469" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nb" translatesAutoresizingMaskIntoConstraints="NO" id="QqP-el-WRk">
+                                <rect key="frame" x="67" y="298" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flat Footed Recommendations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8y-JL-Ecb">
+                                <rect key="frame" x="43" y="95" width="289" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5c-OH-g03">
+                                <rect key="frame" x="127" y="617" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Amazon.com"/>
+                                <connections>
+                                    <action selector="amazon:" destination="wqe-5Y-C6r" eventType="touchUpInside" id="4UE-Ms-cIC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soles" translatesAutoresizingMaskIntoConstraints="NO" id="Fec-TU-tSA">
+                                <rect key="frame" x="67" y="147" width="240" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IjR-ap-g6N" firstAttribute="leading" secondItem="HDK-vM-ifd" secondAttribute="leadingMargin" constant="17" id="hhb-GN-4c2"/>
+                            <constraint firstItem="IjR-ap-g6N" firstAttribute="top" secondItem="EtN-bE-7BZ" secondAttribute="bottom" constant="22" id="uq6-ic-53j"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3H-Kj-WpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133.5999999999999" y="2.2488755622188905"/>
+        </scene>
     </scenes>
     <resources>
         <image name="checkmark3" width="608" height="607"/>
+        <image name="nb" width="401" height="253"/>
+        <image name="soles" width="360" height="360"/>
+        <image name="wide" width="740" height="493"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="K5p-Pc-rEa"/>
+        <segue reference="0Co-xv-lZS"/>
+        <segue reference="EFM-xe-Ayo"/>
     </inferredMetricsTieBreakers>
 </document>

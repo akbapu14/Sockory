@@ -32,7 +32,7 @@ class welcomeScreen: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     func pingServer() {
-        var endpoint = "http://10.251.65.201:8080/"
+        var endpoint = "http://10.251.131.141:8080/"
         Alamofire.request(endpoint).responseJSON
             { response in
                 

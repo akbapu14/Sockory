@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     var totalViewStrings: [String] = []
     var sceneNodes: [SCNNode] = []
     var current: Int = 0
+    var didFindFootedNess: Bool = true
+    var keepTrackOfLast: String = "Flat Feet Detected"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -91,7 +93,7 @@ class ViewController: UIViewController {
         self.mainTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.pingServer), userInfo: nil, repeats: true);
     }
     func pingServer() {
-        var endpoint = "http://10.251.65.201:8080/"
+        var endpoint = "http://10.251.131.141:8080/"
         Alamofire.request(endpoint).responseJSON
             { response in
                 
@@ -106,7 +108,7 @@ class ViewController: UIViewController {
                 
                 
         }
-        endpoint =  "http://10.251.65.201:8080/steps"
+        endpoint =  "http://10.251.131.141:8080/steps"
 
         Alamofire.request(endpoint).responseJSON
             { response in
@@ -151,8 +153,10 @@ class ViewController: UIViewController {
             }
             someCount += 1
         }
+        var sum = CGFloat.init(0)
         for i in 0...5 {
             var rawValue = CGFloat(spaceCrunch[i])
+            sum += rawValue
             if (i == 4) {
                 if (rawValue - 200) > 0 {
                     rawValue = (rawValue - 200) * 0.1015
@@ -168,6 +172,19 @@ class ViewController: UIViewController {
             }
             totalViews[i].text = totalViewStrings[i] + String(describing: rawValue) + "lbs"
         }
+        if (self.didFindFootedNess) {
+            if (sum > 3000) {
+                self.advice.text = "Flat Feet Detected"
+                self.keepTrackOfLast = self.advice.text!
+            } else {
+                self.advice.text = "High Arch Detected"
+                self.keepTrackOfLast = self.advice.text!
+
+            }
+            self.didFindFootedNess = false
+        }
+
+        
     }
     
     func updateSteps(_ steps: Int) {
@@ -179,6 +196,8 @@ class ViewController: UIViewController {
         current = segmentedControl.selectedSegmentIndex
         if (current == 0){
             self.advice.isHidden = false
+            self.advice.text = self.keepTrackOfLast
+
             for view in self.totalViews {
                 view.isHidden = true
             }
